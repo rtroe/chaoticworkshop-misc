@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Chaotic Workshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/loading.css" />
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-105724549-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body onload="myFunction()">
+    <div id="loading">
+
+        <img background-color="#1b1b1b" id="loading-image" src="img/load/loading.png" alt="Loading..." style="position: relative;  z-index: 600; top:5%; height: 45%; left:-10px" />
+        <div id="loader"></div>
+
+    </div>
+    </div>
+
+    <div class="bgimg-1">
+        <!--
+This is the top portion
+-->
+        <div class="caption">
+            <!--<span class="border">NOW AVAILABLE</span>-->
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div align="center">
+                <table style="width:75%;">
+                    <tr>
+                        <!-- GOOGLE PLAY BUTTON -->
+                        <th><a href="#/"><img id="btn_google" class="img-store-small" src="https://i.imgur.com/olEbQgF.png"
+                                    alt="Get it on Google Play" width="202" height="60" onclick="modalOpenAndroid()" /></a></th>
+                        <!--APPLE BUTTON-->
+                        <th>
+                            <a href="#/">
+                                <img class="img-store-small" src="https://i.imgur.com/BvFEBb9.png" alt="Download it on the App Store"
+                                    width="202" height="60" onclick="modalOpenApple()" /></a>
+                        </th>
+                        <!-- STEAM BUTTON -->
+                        <th>
+                            <a href="https://store.steampowered.com/app/895900/The_Chaotic_Workshop/" target="_blank">
+                                <img id="btn_steam" class="img-store-small" src="https://imgur.com/s9VYzxv.png" alt="Get it on Steam"
+                                    width="202" height="60" />
+                            </a>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <h3 style="text-align:center;">Welcome to The Chaotic Workshop</h3>
+        <p style="color: #555;">
+            The Chaotic Workshop is a cartoon puzzle sandbox game which challenges you to solve its puzzle Blueprints
+            by any means necessary. From rockets to pinball bouncers, tennis ball canons to proximity mines, it is up
+            to you of how to get the job done. With over 70 items, 50 levels and a full-fledged sandbox level editor,
+            the game becomes what ever you&rsquo;re imagination want&rsquo;s it to be.
+            <br />
+            <br /> There's no hand holding in this game, and with only a basic Tutorial, you are left to your own
+            devices to experiment and see what impact or result hooking up different items together can have.
+        </p>
+        <br />
+        <div class="video-container">
+            <iframe align="center" src="https://www.youtube.com/embed/YNa01QwLCtk" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="bgimg-2">
+        <video autoplay muted loop class="bgvid" id="myVideo">
+            <source src="video/rocket.mp4" type="video/mp4">
+        </video>
+        <div class="caption">
+            <span class="border" style="filter:none;">50 LEVELS AND COUNTING</span>
+        </div>
+    </div>
+    <div style="position:relative;">
+        <div class="para">
+            <h3 class="paraH">Your Challenges</h3>
+            <p>The Chaotic Workshop starts off with 50 unlockable levels for you to try your creative and problem
+                solving skills at. Ranging from having to launch a rocket with a rubber duck, or using wormholes to
+                make way for a pig, each level forces you to think outside of the box.
+                <br />
+                <br /> This level count will grow though with community feedback and DLC Theme Packs (Free for
+                Desktop)!
+            </p>
+        </div>
+    </div>
+    <div class="bgimg-3">
+        <video autoplay muted loop class="bgvid" id="myVideo">
+            <source src="video/bouncer.mp4" type="video/mp4">
+        </video>
+        <div class="caption">
+            <span class="border">OVER 70 ITEMS</span>
+        </div>
+    </div>
+    <div style="position:relative;">
+        <div class="para">
+            <h3 class="paraH">Your Choices</h3>
+            <p>With over 70 unlockable items in your toolbox, you have the freedom to create what ever you have at your
+                fingertips. But much of the time, you'll be constrained to what you have! Fear not as there's often
+                more than one way to solve each puzzle!</p>
+        </div>
+    </div>
+    <div class="bgimg-4">
+        <video autoplay muted loop class="bgvid" id="myVideo">
+            <source src="video/sandbox.mp4" type="video/mp4">
+        </video>
+        <div class="caption">
+            <span class="border">UNLEASH YOUR CREATIVITY IN THE SANDBOX</span>
+        </div>
+    </div>
+    <div style="position:relative;">
+        <div class="para">
+            <h3 class="paraH">Your Creativity</h3>
+            <p>Ever wanted to know what would happen if you hooked up a Fire Extinguisher to a wooden crate inside a
+                room full of pinball bouncers & wormholes.
+                <br />
+                <br /> Well now you can.
+                <br />
+                <br /> With those possible +70 items, your own creativity is the only limit in the Sandbox. Play the
+                puzzles to unlock even more Items to add to your own personal contraptions and share them online with
+                your friends!</p>
+        </div>
+    </div>
+    <div class="bgimg-5">
+        <div class="caption" style="top: 40%;">
+            <span class="border">GET IT NOW!</span>
+            <br />
+            <br />
+            <br />
+            <div align="center">
+                <table style="width:75%;">
+                    <tr>
+                        <th>
+                            <!--GOOGLE PLAY BUTTON -->
+                            <a href="#/">
+                                <img id="btn_google" class="img-store" src="https://i.imgur.com/olEbQgF.png" alt="Get it on Google Play"
+                                    width="270" height="80" onclick="modalOpenAndroid()" />
+                            </a>
+                        </th>
+                        <th>
+                            <!--APPLE BUTTON -->
+                            <a href="#/">
+                                <img class="img-store" src="https://i.imgur.com/BvFEBb9.png" alt="Download it on the App Store"
+                                    width="270" height="80" onclick="modalOpenApple()" />
+                            </a>
+                        </th>
+                        <th>
+                            <!--STEAM BUTTON -->
+                            <a href="https://store.steampowered.com/app/895900/The_Chaotic_Workshop/" target="_blank">
+                                <img id="btn_steam" class="img-store" src="https://imgur.com/s9VYzxv.png" alt="Get it on Steam"
+                                    width="270" height="80" />
+                            </a>
+                        </th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div style="position:relative;">
+        <div class="para" style="background-color: #222">
+            <h3 class="paraH" style="color:#00bfff;">Let us know what you think!</h3>
+            <p>Follow us on Twitter, Like us on Facebook, or get in touch through any of the other multiple different
+                Social Medias below!
+            </p>
+            <div align="center">
+                <table style="width:75%;">
+                    <tr>
+                        <!--Facebook Button-->
+                        <th>
+                            <a href="https://www.facebook.com/virtexedgedesign" target="_blank">
+                                <img src="img/social/fb/btn.png" alt="virtex facebook" class="img-social" />
+                            </a>
+                        </th>
+                        <!--Twitter Button-->
+                        <th>
+                            <a href="https://twitter.com/VirtexEdge" target="_blank">
+                                <img src="img/social/twtr/btn.png" alt="virtex twitter" class="img-social" />
+                            </a>
+                        </th>
+                        <!--Github Button-->
+                        <th>
+                            <a href="https://www.reddit.com/r/virtexedgedesign/" target="_blank">
+                                <img src="img/social/git/btn.png" alt="virtex github" class="img-social" />
+                            </a>
+                        </th>
+                        <!--Youtube Button-->
+                        <th>
+                            <a href="https://www.youtube.com/channel/UCYZJghLeoNQ-stjovYpvVsw" target="_blank">
+                                <img src="img/social/yutb/btn.png" alt="virtex youtube" class="img-social" />
+                            </a>
+                        </th>
+                        <!--Reddit Button-->
+                        <th>
+                            <a href="https://www.reddit.com/r/virtexedgedesign/" target="_blank">
+                                <img src="img/social/rdt/btn.png" alt="virtex subreddit" class="img-social" />
+                            </a>
+                        </th>
+                    </tr>
+                </table>
+                <br />
+                <hr />
+                <br />
+                <div align="center">
+                    <table>
+                        <tr>
+                            <!--Company Button-->
+                            <th>
+                                <a href="https://virtexedgedesign.com/" target="_blank">
+                                    <img src="img/sys/vrtx/vrtx_title.png" alt="virtex site" class="img-social" />
+                                </a>
+                            </th>
+                            <!--Vertices Engine Button-->
+                            <th>
+                                <a href="https://virtexedgedesign.com/vertices-multiplatform-engine/" target="_blank">
+                                    <img src="img/sys/eng/vrtc_engine.png" alt="vertices engine site" class="img-social" />
+                                </a>
+                            </th>
+                        </tr>
+                    </table>
+                    <div class="smalltype">
+                        The Chaotic Workshop is owned and distributed by
+                        <a href="https://virtexedgedesign.com/" target="_blank">Virtex Edge Design</a>. It is built
+                        using the
+                        <a href="https://virtexedgedesign.com/vertices-multiplatform-engine/" target="_blank">Vertices
+                            Engine</a> and
+                        <a href="http://www.monogame.net/" target="_blank">MonoGame</a> Framework.
+                        <br />'The Chaotic Workshop' is Copyright Virtex Edge Design.
+                    </div>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span id="modal_close" onclick="modalClose()" class="close">&times;</span>
+                    <h3 align="center" style="padding: 1px;">
+                        Choose a Version
+                    </h3>
+                    <div>
+                        <table style="width:75%; " align="center">
+                            <tr>
+                                <th style="width:50%;" align="center">
+                                    <!--Lite BUTTON-->
+                                    <a href="#/">
+                                        <img class="modal-img" src="img/version/logo_lite.png" alt="Download the Lite Version"
+                                            onclick="modalOpenLite()" style="width: 250px;" />
+                                    </a>
+                                </th>
+                                <th align="center">
+                                    <!--FUll BUTTON-->
+                                    <a href="#/">
+                                        <img class="modal-img" src="img/version/logo_full.png" alt="Download the Full Version"
+                                            onclick="modalOpenFull()" style="width: 250px;" />
+                                    </a>
+                                </th>
+                            <tr>
+                                <!--Lite Feature List-->
+                                <th>
+                                    <ul>
+                                        <li>20 Levels</li>
+                                        <li>Ad Supported</li>
+                                    </ul>
+                                </th>
+                                <!--Full Feature List-->
+                                <th>
+                                    <ul>
+                                        <li>Access to All levels!</li>
+                                        <li>Make your own custom levels in the Sandbox!</li>
+                                        <li>No Ads!</li>
+                                    </ul>
+                                </th>
+                            </tr>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div style="position: fixed; top:0px;right:0px">
+                <a href="beta/index.html" target="_blank">
+          <img src="img/parallax/btn_corner.png">
+        </a>
+            </div>
+            -->
+            <script>
+                /*
+                $(document).ready(function(){
+                  $('#loading').fadeOut('slow');
+              
+                });
+                */
+                var myVar;
+
+                function myFunction() {
+                    myVar = setTimeout(showPage, 500);
+
+                }
+
+                function showPage() {
+                    $('#loading').fadeOut('fast');
+                }
+
+            </script>
+</body>
+<script src="js/main.js"></script>
+<!--
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">require(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us18.list-manage.com", "uuid": "f241d6dddadedc44a1d6e46cf", "lid": "2d072d604b" }) })</script>
+-->
+
+</html>
