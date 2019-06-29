@@ -43,6 +43,10 @@ html {
   background-image: url('../img/parallax/img5.png');
   min-height: 500px;
 }
+.bgimg-6 {
+  background-image: url('../img/parallax/img5.png');
+  min-height: 500px;
+}
 .caption {
   position: absolute;
   left: 0;
@@ -135,7 +139,8 @@ a:hover {
   .bgimg-2,
   .bgimg-3,
   .bgimg-4,
-  .bgimg-5 {
+  .bgimg-5,
+  .bgimg-6 {
     background-attachment: scroll;
   }
 }
@@ -214,8 +219,8 @@ a:hover {
   cursor: pointer;
 }
 
-.betaBtn{
-    -o-transition: 0.5s;
+.betaBtn {
+  -o-transition: 0.5s;
   -ms-transition: 0.5s;
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
@@ -223,5 +228,5 @@ a:hover {
   transition: 0.125s;
 }
 .betaBtn:hover {
-    filter: brightness(1.25);
+  filter: brightness(1.25);
 }
